@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="jokesApp">
+<head>
+  <title>Jokes App</title>
+  <script type="text/javascript" src="https://opensource.keycdn.com/angularjs/1.5.3/angular.min.js"></script>
+  <script type="text/javascript" src='app.js'></script>
+</head>
+<body>
+
+  <div ng-controller="RandomJokeController as jokeCtrl">
+    <p>{{ jokeCtrl.random_joke }}</p>
+    <p>{{ jokeCtrl.potato }}</p>
+    <button ng-click="jokeCtrl.getRandomJoke()">New Random Joke</button>
+  </div>
+
+</body>
+</html>
