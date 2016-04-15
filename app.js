@@ -6,8 +6,8 @@ angular
 RandomJokeController.$inject = ["$http"];
 function RandomJokeController( $http ){
   var vm = this;
-  vm.getRandomJoke = getRandomJoke;
-  getRandomJoke();
+  vm.getRandomJoke = getRandomJoke; // attach function to scope so the view can call it
+  getRandomJoke(); // call the function right away so we can render the first joke
 
   ////
 
